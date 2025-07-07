@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".SignIn">
+
+    <TextView
+        android:id="@+id/Signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_x="111dp"
+        android:layout_y="83dp"
+        android:text="Sign In"
+        android:textAlignment="center"
+        android:textColor="@color/ochre"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/login_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_x="22dp"
+        android:layout_y="241dp"
+        android:text="Welcome! Please sign in with Google"
+        android:textAlignment="center"
+        android:textColor="@color/ochre"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/google_sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_x="127dp"
+        android:layout_y="325dp"></com.google.android.gms.common.SignInButton>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_x="157dp"
+        android:layout_y="485dp"
+        android:visibility="gone" />
+
+
+</AbsoluteLayout>

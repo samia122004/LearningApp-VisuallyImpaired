@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ochre">
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_x="0dp"
+        android:layout_y="0dp"
+        android:contentDescription="Back"
+        android:layout_marginLeft="10dp"
+        android:onClick="onBackButtonClicked"
+        android:src="@drawable/back"
+        />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/profile"/>
+
+    <TextView
+        android:id="@+id/name1"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="22dp"
+        android:text="Name" />
+    <TextView
+        android:id="@+id/email"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="175dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="18dp"
+        android:text="Email" />
+
+    <!-- <ImageView
+        android:layout_width="228dp"
+        android:layout_height="139dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="60dp"
+        android:layout_x="0dp"
+        android:layout_y="0dp"
+        android:src="@drawable/learning" /> -->
+</RelativeLayout>

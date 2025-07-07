@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".Help">
+
+    <!-- Title Section -->
+    <TextView
+        android:id="@+id/helpTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help and Instructions"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="24sp"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        android:paddingBottom="16dp"/>
+
+    <!-- Instructions Section -->
+    <TextView
+        android:id="@+id/instruction1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="1. On the Dashboard, slide your finger to choose a subject."
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:paddingBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/instruction2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="2. After selecting a subject, slide your finger again to select a chapter."
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:paddingBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/instruction3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="3. The video will start playing automatically."
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:paddingBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/instruction4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="4. For forward, double tap on the right side of the screen."
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:paddingBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/instruction5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="5. For backward, double tap on the left side of the screen."
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:paddingBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/instruction6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="6. To pause and play, click on the center of the screen."
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:paddingBottom="10dp"/>
+
+    <!-- Contact Section -->
+    <TextView
+        android:id="@+id/contactInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="For further assistance, contact us at: "
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:paddingTop="20dp"/>
+
+    <TextView
+        android:id="@+id/contactInfo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="specialminds2024@gmail.com"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="16sp"
+        />
+
+</LinearLayout>

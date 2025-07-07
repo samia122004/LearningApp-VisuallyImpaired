@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MathQuizActivity"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/ochre">
+        <ImageView
+            android:id="@+id/imageViewQuizOption"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="14dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:padding="4dp"
+            android:contentDescription="Back"
+            app:srcCompat="@drawable/arrow"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="12dp"
+            android:text="Maths Quiz"
+            style="@style/titleTextStyle" />
+
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="100dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewQuestionMath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="24dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMathQuizTitle"
+        tools:text="What is 2 + 2?" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupMath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:checkedButton="@id/radioButton1Math"
+        app:layout_constraintEnd_toEndOf="@+id/textViewQuestionMath"
+        app:layout_constraintStart_toStartOf="@+id/textViewQuestionMath"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestionMath">
+
+        <RadioButton
+            android:id="@+id/radioButton1Math"
+            style="@style/text_radio_button_answer"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Answer 1" />
+
+        <RadioButton
+            android:id="@+id/radioButton2Math"
+            style="@style/text_radio_button_answer"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Answer 2" />
+
+        <RadioButton
+            android:id="@+id/radioButton3Math"
+            style="@style/text_radio_button_answer"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Answer 3" />
+
+        <RadioButton
+            android:id="@+id/radioButton4Math"
+            style="@style/text_radio_button_answer"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Answer 4" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewCurrentQuestionMath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnNextQuestionMath"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroupMath"
+        app:layout_constraintStart_toStartOf="@+id/radioGroupMath"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupMath"
+        tools:text="Current Question: 1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNextQuestionMath"
+        style="@style/btnStyle"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="40dp"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroupMath"
+        app:layout_constraintStart_toStartOf="@+id/radioGroupMath" />
+
+</LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".FinalResultActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/ochre">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            style="@style/titleTextStyle"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="15dp"/>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tvtimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        tools:text="" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvIncorrectAnswers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_marginStart="80dp"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            tools:text="Incorrect Answers: 2" />
+
+        <TextView
+            android:id="@+id/tvCorrectAnswers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            tools:text="Correct Answers: 8" />
+        <TextView
+            android:id="@+id/tvTotalQuestions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            tools:text="Total Questions: 10" />
+
+        <TextView
+            android:id="@+id/tvScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            tools:text="Score: 80" />
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
+

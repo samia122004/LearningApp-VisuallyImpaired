@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/black"
+    tools:context=".QuizActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/ochre">
+        <ImageView
+            android:id="@+id/imageViewQuizOption"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="14dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:padding="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/arrow"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/quiz_option"
+            style="@style/titleTextStyle" />
+
+</RelativeLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvMath"
+        style="@style/cardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_card_height"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="24dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="Maths">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="@dimen/start_quiz_image_view_size"
+                android:layout_height="@dimen/start_quiz_image_view_size"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/blackboard" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:text="@string/math"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/black"
+                style="@style/categoryHeadingTextStyle" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvScience"
+        style="@style/cardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_card_height"
+        android:layout_marginTop="270dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:clickable="true"
+        android:focusable="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="Science">
+
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="@dimen/start_quiz_image_view_size"
+                android:layout_height="@dimen/start_quiz_image_view_size"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/worldwide" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:text="@string/Science"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/black"
+                style="@style/categoryHeadingTextStyle" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvEnglish"
+        style="@style/cardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_card_height"
+        android:layout_marginTop="440dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:clickable="true"
+        android:focusable="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="English">
+
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="@dimen/start_quiz_image_view_size"
+                android:layout_height="@dimen/start_quiz_image_view_size"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/book" />
+
+            <TextView
+                android:id="@+id/textView7"
+                style="@style/categoryHeadingTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="50dp"
+                android:text="@string/English"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
